@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Who is the 44th President of the United States?"
+        android:textColor="#5A5E6B"
+        android:background="#98CCEE"
+        android:textSize="40sp" />
+
+    <!-- Réponse 1 -->
+    <TextView
+        android:id="@+id/flashcard_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_question"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Barack Obama"
+        android:textSize="40sp"
+        android:onClick="checkAnswer" />
+
+    <!-- Réponse 2 -->
+    <TextView
+        android:id="@+id/flashcard_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer1"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Bill Clinton"
+        android:textSize="40sp"
+        android:onClick="checkAnswer" />
+
+    <!-- Réponse 3 -->
+    <TextView
+        android:id="@+id/flashcard_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer2"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="George W. Bush"
+        android:textSize="40sp"
+        android:onClick="checkAnswer" />
+
+    <ImageButton
+        android:id="@+id/toggle_answers_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconmonstr_eye_off_filled"
+        android:background="@null"
+        android:onClick="toggleAnswersbutton"
+        android:contentDescription="Toggle Answers" />
+
+
+
+</RelativeLayout>
