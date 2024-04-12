@@ -8,7 +8,7 @@
 
 ### App Walk-though
 
-<img src="Gif.gif" width=200><br>
+<img src="Gi.gif" width=200><br>
 
 
 ## Required
